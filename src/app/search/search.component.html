@@ -1,0 +1,10 @@
+<div>
+  <form action="#">
+    <input (input)="search($event)" type="text" aria-label="search">
+    <select class="button" aria-label="select" (change)="select($event)">
+      <option value="all">All</option>
+      <option value="author">Author</option>
+      <option value="bookName">Name</option>
+    </select>
+  </form>
+</div>

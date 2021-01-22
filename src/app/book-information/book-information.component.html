@@ -1,0 +1,14 @@
+<div class="info">
+  <h1 class="book-name">{{bookInfo.copyArr[bookInfo.idSelect].bookName}}</h1>
+  <p class="book-text">{{bookInfo.copyArr[bookInfo.idSelect].textContent}}</p>
+  <ul class="book-content">
+    <li>Автор: {{bookInfo.copyArr[bookInfo.idSelect].author}}</li>
+    <li>Страниц: {{bookInfo.copyArr[bookInfo.idSelect].numberOfPages}}</li>
+    <li>Первая публикация: {{bookInfo.copyArr[bookInfo.idSelect].year}}г.</li>
+  </ul>
+  <div class="buttons">
+    <button (click)="delBook(bookInfo.idSelect)" class="del-button">Del</button>
+    <button (click)="bookInfo.modalWindow = 1">Добавить</button>
+    <button (click)="bookInfo.edit()">Изменить</button>
+  </div>
+</div>

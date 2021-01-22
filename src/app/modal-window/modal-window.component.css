@@ -1,0 +1,65 @@
+#muModal{
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0 0 0 0.3);
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close-btn{
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  float: right;
+  width: 28px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content{
+  width: 500px;
+  margin: 0 auto;
+}
+input,
+textarea{
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: 40px;
+}
+
+textarea{
+  height: 100px;
+}
+button{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+}
+button{
+  background-color: red;
+}
+.sm-input{
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+}
+
+@media (max-width: 576px){
+  .modal-content{
+    width: 100%;
+  }
+}

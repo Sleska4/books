@@ -1,0 +1,47 @@
+<div class="books-render container">
+  <div class=" flip-container bookSize" *ngFor="let book of booksInformation.copyArr;">
+    <div class="flipper books">
+      <div class="book front" (click)="bookClick(book.id)">
+        <div class="book-title">
+          <div>
+            <p class="book-name">{{ book.bookName }}</p>
+            <p class="book-author">{{ book.author }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="book-title">
+          <div>
+            <p>{{book.bookName}}</p>
+            <p>{{ book.author }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="books-render container row">
+  <div class="col-4 flip-container bookSize" *ngFor="let book of booksInformation.copyArr;">
+    <div class="flipper books">
+      <div class="book front" (click)="bookClick(book.id)">
+        <div class="book-title">
+          <div>
+            <p class="book-name">{{ book.bookName }}</p>
+            <p class="book-author">{{ book.author }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="book-title">
+          <div>
+            <p>{{book.bookName}}</p>
+            <p>{{ book.author }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
